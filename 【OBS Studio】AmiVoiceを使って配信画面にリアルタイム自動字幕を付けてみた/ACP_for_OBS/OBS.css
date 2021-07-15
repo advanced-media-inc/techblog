@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+body{
+ background: whitesmoke;
+}
+
+.titleAmi{
+	font-family: Verdana;
+  font-style: italic;
+  font-weight: bold;
+  color: gray;
+  margin: 0;
+}
+
+.titleAmi span{
+  font-family: Consolas;
+  vertical-align: super;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.settingProperty{
+	padding: 0.5em 1em;
+	margin: 1em 1em;
+	color: whitesmoke;
+	background: whitesmoke;
+	border: solid 1px darkgray;
+	border-bottom: solid 3px darkgray;
+	border-radius: 9px;
+}
+
+.settingPropertyPanel {
+	display: inline-block;
+  position: relative;
+  width: 300px;
+	margin: 10px;
+  padding: 0.5em 0.5em;
+  border: solid 1px gainsboro;
+  border-radius: 4px;
+	color: blue;
+}
+.settingPropertyPanel .panelTitle {
+  position: absolute;
+  display: inline-block;
+  top: -6px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 12px;
+  background: whitesmoke;
+  color: darkgray;
+  font-weight: bold;
+}
+.settingPropertyPanel p {
+  margin: 0;
+  padding: 0;
+}
+.settingPropertyPanel:focus-within{
+	/*box-shadow: 0 0 0 1px lightgrey; 太くしたい場合*/
+	border: solid 1px darkgreen;
+}
+
+.panelText{
+	font-size: 14px;
+	font-family: "メイリオ";
+	width: 100%;
+	height: 21px;
+	text-align: left;
+	background: whitesmoke;
+	border: none;
+}
+.panelText:focus{
+	outline: none;
+}
+
+
+.startButton{
+	-webkit-appearance: none;
+	width: 200px;
+	height: auto;
+	color: #fff;
+  background-color: forestgreen;
+	box-shadow: 0px 3px darkgreen;
+	cursor: pointer;
+	line-height: 50px;
+  border-radius: 50px;
+	border: none;
+	padding: 0;
+}
+.startButton:hover{
+  opacity: 0.9;
+}
+.startButton:enabled:active{
+	box-shadow: none;
+  position: relative;
+  top: 3px;
+}
+.startButton:focus{
+	outline: none;
+}
+.startButton:disabled{
+  background-color: darkgray;
+  box-shadow: 0px 3px gray;
+  opacity: 0.7;
+}
+.buttonPosition{
+  text-align: left;
+	padding-left: 50px;
+}
+.buttonImage{
+	width: auto;
+	height: 50px;
+	margin: auto;
+	margin-right: 0px;
+}
+.buttonText{
+	margin: auto;
+	margin-left: 0px;
+}
+.buttonContent{
+	display: flex;
+}
+
+.resultText{
+	width:100%;
+	height: 400px;
+  overflow: hidden;
+}
+
+#messages div {
+	padding: 3px 0;
+	font-family: "メイリオ";
+}
+
+#issueButton {
+	height: 100%;
+	cursor: pointer;
+}
+
+#resumePauseButton {
+	height: 100%;
+	cursor: pointer;
+}
+
+.recognitionResult {
+	height: 60px;
+	padding: 3px;
+}
+
+.sending {
+	color: whitesmoke;
+	background: red;
+  box-shadow: 0px 3px darkred;
+}
+
+.supplement {
+	font-size: 12px;
+}
+
+.bar {
+	position: relative;
+}
+
+#version {
+	font-size: 10px;
+	position: absolute;
+	right: 0;
+	top: -12px;
+}

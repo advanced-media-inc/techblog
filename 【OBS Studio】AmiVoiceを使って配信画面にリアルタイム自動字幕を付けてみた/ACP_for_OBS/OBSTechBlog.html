@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <title>ACP for OBS Studio</title>
+  <script src="https://cdn.jsdelivr.net/npm/obs-websocket-js@4.0.2/dist/obs-websocket.min.js"></script>
+  <script type="text/javascript" src="./js/AmiVoice/recorder.js"></script>
+  <script type="text/javascript" src="./js/AmiVoice/wrp.js"></script>
+  <script type='text/javascript' src='./js/obs-connector/obs-connector.js' charset='UTF-8'></script>
+  <script type='text/javascript' src='./js/main.js' charset='UTF-8'></script>
+  <link rel="stylesheet" href="OBS.css">
+
+</head>
+
+<body lang="ja">
+  <div style="text-align:center;">
+    <h1 class="titleAmi">AmiVoice<span>®</span> Cloud Platform for OBS Studio</h1>
+  </div>
+
+  <div class="settingProperty">
+    <div class="settingPropertyPanel">
+      <span class="panelTitle">OBSサーバーポート</span>
+      <p><input type="number" class="panelText" id="portNumber" spellcheck="false" tabindex="3" value="4444"></p>
+    </div>
+    <div class="settingPropertyPanel">
+      <span class="panelTitle">自動字幕改行文字数</span>
+      <p><input type="number" min="1" class="panelText" id="maxLineWidth" spellcheck="false" tabindex="3" value="30" min="1" ></p>
+    </div>
+    <div class="settingPropertyPanel" style="width:93%; max-width:643px;">
+      <span class="panelTitle">&nbsp;OBSのテキスト（GDI+）ソース名</span>
+      <p><input type="text" class="panelText" style="width:100%; text-align:left;" id="sourceName" spellcheck="false"
+          tabindex="3" value="Acp"></p>
+    </div>
+
+    <div class="buttonPosition">
+      <button class="startButton" id="obsConnectButton" tabindex="5">
+        <div class="buttonContent">
+          <image class="buttonImage" src="image/OBS.png" />
+          <p class="buttonText" id="obsText">OBSの接続</p>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="settingProperty">
+    <div class="settingPropertyPanel" style="width:93%; max-width:643px;">
+      <span class="panelTitle">APPKEY</span>
+      <p><input type="text" class="panelText" style="width:100%; text-align:left;" id="authorization" tabindex="3"></p>
+    </div>
+    <div class="settingPropertyPanel">
+      <span class="panelTitle">無発話許容区間(秒):</span>
+      <p><input type="number" min="0.5" class="panelText" id="checkIntervalTime" spellcheck="false" tabindex="3" value="1"></p>
+    </div>
+    <div class="settingPropertyPanel">
+      <span class="panelTitle">&nbsp;認識結果更新時間(秒):</span>
+      <p><input type="number" min="0.05" class="panelText" id="resultUpdatedInterval" spellcheck="false" tabindex="3" value="0.5">
+      </p>
+    </div>
+    <div class="settingPropertyPanel">
+      <span class="panelTitle">&nbsp;連続録音可能時間(分):</span>
+      <p><input type="number" min="5" class="panelText" id="maxRecordingTime" spellcheck="false" tabindex="3" value="60"></p>
+    </div>
+
+    <div class="buttonPosition">
+      <button class="startButton" id="resumePauseButton" tabindex="5">
+        <div class="buttonContent">
+          <image class="buttonImage" src="image/micb.png" />
+          <p class="buttonText" id="recText">録音の開始</p>
+        </div>
+      </button>
+    </div>
+    <hr>
+    <div id="messages" class="resultText"></div>
+  </div>
+  <div class="bar">
+    <hr>
+    <div id="version">Wrp/1.0.01 Recorder/1.0.01 This plugin uses the OBS Studio logo https://obsproject.com</div>
+  </div>
+</body>
+
+</html>
