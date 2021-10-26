@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <meta http-equiv="Content-Script-Type" content="text/javascript">
-  <title>ACP for OBS Studio</title>
+  <title>ACP Live Captioning Sample</title>
   <script src="https://cdn.jsdelivr.net/npm/obs-websocket-js@4.0.2/dist/obs-websocket.min.js"></script>
   <script type="text/javascript" src="./js/AmiVoice/recorder.js"></script>
   <script type="text/javascript" src="./js/AmiVoice/wrp.js"></script>
@@ -17,7 +17,8 @@
 
 <body lang="ja">
   <div style="text-align:center;">
-    <h1 class="titleAmi">AmiVoice<span>®</span> Cloud Platform for OBS Studio</h1>
+    <h1 class="titleAmi">ACP Live Captioning Sample</h1>
+    <!--  AmiVoice<span>®</span> Cloud Platform for OBS Studio  -->
   </div>
 
   <div class="settingProperty">
@@ -52,16 +53,16 @@
     </div>
     <div class="settingPropertyPanel">
       <span class="panelTitle">無発話許容区間(秒):</span>
-      <p><input type="number" min="0.5" class="panelText" id="checkIntervalTime" spellcheck="false" tabindex="3" value="1"></p>
+      <p><input type="text" class="panelText" id="checkIntervalTime" spellcheck="false" tabindex="3" value="1"></p>
     </div>
     <div class="settingPropertyPanel">
       <span class="panelTitle">&nbsp;認識結果更新時間(秒):</span>
-      <p><input type="number" min="0.05" class="panelText" id="resultUpdatedInterval" spellcheck="false" tabindex="3" value="0.5">
+      <p><input type="text" class="panelText" id="resultUpdatedInterval" spellcheck="false" tabindex="3" value="0.5">
       </p>
     </div>
     <div class="settingPropertyPanel">
       <span class="panelTitle">&nbsp;連続録音可能時間(分):</span>
-      <p><input type="number" min="5" class="panelText" id="maxRecordingTime" spellcheck="false" tabindex="3" value="60"></p>
+      <p><input type="text" class="panelText" id="maxRecordingTime" spellcheck="false" tabindex="3" value="60"></p>
     </div>
 
     <div class="buttonPosition">
