@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19162" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19044"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AudioMemoWithACP_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="157-Cs-JPY">
+                            <items>
+                                <table alignment="left" pagingScroll="YES" id="0BO-uD-PBY">
+                                    <items>
+                                        <tableRow identifier="Row" id="uam-hX-THd" customClass="TableRowController" customModule="AudioMemoWithACP_WatchKit_Extension">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="0Ga-He-B2s">
+                                                <items>
+                                                    <group alignment="right" layout="vertical" radius="10" spacing="0.0" id="ZVM-E6-sdy">
+                                                        <items>
+                                                            <label alignment="left" text="Test" numberOfLines="0" id="mHH-xy-ckm">
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </label>
+                                                        </items>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                                    </group>
+                                                    <label alignment="right" text="2021/10/01 12:34" id="ugJ-a7-aQX">
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="text" destination="mHH-xy-ckm" id="Vzq-29-cwo"/>
+                                                <outlet property="time" destination="ugJ-a7-aQX" id="QKB-fK-poi"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </table>
+                                <group width="1" alignment="center" verticalAlignment="center" spacing="15" id="qhU-61-jeo">
+                                    <items>
+                                        <button width="40" height="40" alignment="center" backgroundImage="mic.circle.fill" catalog="system" id="8XN-eI-r4E">
+                                            <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="toRecord" destination="AgC-eL-Hgc" id="Xqr-mz-EWf"/>
+                                            </connections>
+                                        </button>
+                                        <button width="40" height="40" alignment="center" backgroundImage="repeat.circle.fill" catalog="system" id="RPt-lF-bQO">
+                                            <color key="backgroundColor" red="0.19826182719999999" green="0.68360441920000004" blue="0.88701993229999998" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="reload" destination="AgC-eL-Hgc" id="bqh-6c-GtV"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="0BO-uD-PBY" id="0Ya-L2-Hef"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-233" y="-21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mic.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="repeat.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
