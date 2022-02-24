@@ -8,27 +8,27 @@
 import Foundation
 
 struct JobData: Codable {
+    // -> Post
     var sessionid: String?
-    var session_id: String?
-    var results: JobResult?
     var text: String?
+    // -> Get
+    var audio_md5: String?
     var audio_size: Int?
-    var content_id: String?
-    var error_message: String?
+    var session_id: String?
+    var service_id: String?
     var status: String?
-    
-
-    //
+    // -> if success
+    var utteranceid: String?
+    var code: String?
+    var message: String?
+    var results: JobResult?
+    // -> if failure
+    var error_message: String?
 }
 
 struct JobResult: Codable {
-    var code: String?
-    var message: String?
     var text: String?
-    var utteranceid: String?
-    
     var results: [Results]?
-    var segments: [Segments]?
     
     struct Results: Codable {
         var confidence: Double?
@@ -45,13 +45,7 @@ struct JobResult: Codable {
             var written: String?
             var starttime: Int?
             var endtime: Int?
+            var label: String?
         }
-    }
-    
-    struct Segments: Codable {
-        var code: String?
-        var message: String?
-        var text: String?
-        var results: [Results]?
     }
 }

@@ -70,7 +70,7 @@ enum AmiHTTP {
                 return
             }
             
-            guard let data = data else {
+            guard let data = data, !data.isEmpty else {
                 completion(.error("No data"))
                 return
             }

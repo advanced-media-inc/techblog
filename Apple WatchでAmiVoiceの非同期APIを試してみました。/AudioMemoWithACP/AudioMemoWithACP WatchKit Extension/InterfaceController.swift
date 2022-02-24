@@ -12,9 +12,8 @@ import AVFoundation
 class InterfaceController: WKInterfaceController {
     
     // MARK: - Constant
-    let SERV_URL = "https://acp-async-test.amivoice.com/v2beta/recognitions"
-    let APP_KEY = "自分のAPPKEYをここに記載" //
-    
+    let SERV_URL = "https://acp-api-async.amivoice.com/v1/recognitions"
+    let APP_KEY = "自分のAPPKEY"
     
     // MARK: - Outlet
     @IBOutlet weak var table: WKInterfaceTable!
@@ -30,7 +29,6 @@ class InterfaceController: WKInterfaceController {
             }
         }
     }
-    //var timer: Timer!
     
     // MARK: - Lyfe
     
@@ -44,15 +42,10 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         print("willActivate")
         fetchData()
-        //self.timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(fetchData), userInfo: nil, repeats: true)
     }
     
     override func didDeactivate() {
         print("didDeactivate")
-        /*
-        if self.timer != nil {
-            self.timer.invalidate()
-        }*/
         LocalDataController.setData(audioInfoArr: infoArr)
     }
 
@@ -139,7 +132,6 @@ class InterfaceController: WKInterfaceController {
                 switch result{
                 case .error(let err):
                     print("error: ", err)
-                    //self.presentAlert(message: err)
 
                 case .result(let job):
                     print("jobData: ", job)
@@ -152,15 +144,14 @@ class InterfaceController: WKInterfaceController {
                     }
                     
                     guard
-                        let results = job.results,
-                        let code = results.code,
-                        let text = results.text
+                        let code = job.code,
+                        let text = job.text
                     else {return}
                     
                     var text_ = text
                     
                     if code != "" {
-                        text_ = "--ERROR--\n" + results.message!
+                        text_ = "--ERROR--\n" + job.message!
                     }
                     
                     self.infoArr[j].recogText = text_
