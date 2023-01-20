@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C60CB702270FDBD300CAA323 /* AmiHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CB701270FDBD300CAA323 /* AmiHTTP.swift */; };
+		C60CB704270FE06F00CAA323 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CB703270FE06F00CAA323 /* FileController.swift */; };
+		C60CB70627102FA600CAA323 /* JobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CB70527102FA600CAA323 /* JobData.swift */; };
+		C60CB7082710391300CAA323 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CB7072710391300CAA323 /* Date+Ext.swift */; };
+		C60CB70A2713211700CAA323 /* AudioInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CB7092713211700CAA323 /* AudioInfo.swift */; };
+		C60CB70F2713C24400CAA323 /* LocalDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CB70E2713C24400CAA323 /* LocalDataController.swift */; };
+		C63C9ECA2709B16600C464E4 /* AudioMemoWithACP WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C63C9EC92709B16600C464E4 /* AudioMemoWithACP WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C63C9ED02709B16600C464E4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63C9ECE2709B16600C464E4 /* Interface.storyboard */; };
+		C63C9ED22709B17100C464E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63C9ED12709B17100C464E4 /* Assets.xcassets */; };
+		C63C9ED92709B17200C464E4 /* AudioMemoWithACP WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C63C9ED82709B17200C464E4 /* AudioMemoWithACP WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C63C9EDE2709B17200C464E4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C9EDD2709B17200C464E4 /* InterfaceController.swift */; };
+		C63C9EE02709B17200C464E4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C9EDF2709B17200C464E4 /* ExtensionDelegate.swift */; };
+		C63C9EE22709B17200C464E4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C9EE12709B17200C464E4 /* ComplicationController.swift */; };
+		C63C9EE42709B17500C464E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63C9EE32709B17500C464E4 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C63C9ECB2709B16600C464E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63C9EBF2709B16500C464E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C63C9EC82709B16600C464E4;
+			remoteInfo = "AudioMemoWithACP WatchKit App";
+		};
+		C63C9EDA2709B17200C464E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63C9EBF2709B16500C464E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C63C9ED72709B17200C464E4;
+			remoteInfo = "AudioMemoWithACP WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C63C9EEB2709B17500C464E4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C63C9ED92709B17200C464E4 /* AudioMemoWithACP WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63C9EEF2709B17500C464E4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C63C9ECA2709B16600C464E4 /* AudioMemoWithACP WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C60CB701270FDBD300CAA323 /* AmiHTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiHTTP.swift; sourceTree = "<group>"; };
+		C60CB703270FE06F00CAA323 /* FileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
+		C60CB70527102FA600CAA323 /* JobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobData.swift; sourceTree = "<group>"; };
+		C60CB7072710391300CAA323 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		C60CB7092713211700CAA323 /* AudioInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInfo.swift; sourceTree = "<group>"; };
+		C60CB70E2713C24400CAA323 /* LocalDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataController.swift; sourceTree = "<group>"; };
+		C63C9EC52709B16500C464E4 /* AudioMemoWithACP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMemoWithACP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63C9EC92709B16600C464E4 /* AudioMemoWithACP WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AudioMemoWithACP WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63C9ECF2709B16600C464E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C63C9ED12709B17100C464E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C63C9ED32709B17100C464E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C63C9ED82709B17200C464E4 /* AudioMemoWithACP WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AudioMemoWithACP WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63C9EDD2709B17200C464E4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C63C9EDF2709B17200C464E4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C63C9EE12709B17200C464E4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C63C9EE32709B17500C464E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C63C9EE52709B17500C464E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C63C9ED52709B17200C464E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C60CB70B27132C7D00CAA323 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C60CB7072710391300CAA323 /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C60CB70C27132C9900CAA323 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C60CB701270FDBD300CAA323 /* AmiHTTP.swift */,
+				C60CB703270FE06F00CAA323 /* FileController.swift */,
+				C60CB70E2713C24400CAA323 /* LocalDataController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C60CB70D27132CAD00CAA323 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C60CB7092713211700CAA323 /* AudioInfo.swift */,
+				C60CB70527102FA600CAA323 /* JobData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C63C9EBE2709B16500C464E4 = {
+			isa = PBXGroup;
+			children = (
+				C63C9ECD2709B16600C464E4 /* AudioMemoWithACP WatchKit App */,
+				C63C9EDC2709B17200C464E4 /* AudioMemoWithACP WatchKit Extension */,
+				C63C9EC62709B16500C464E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C63C9EC62709B16500C464E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C63C9EC52709B16500C464E4 /* AudioMemoWithACP.app */,
+				C63C9EC92709B16600C464E4 /* AudioMemoWithACP WatchKit App.app */,
+				C63C9ED82709B17200C464E4 /* AudioMemoWithACP WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C63C9ECD2709B16600C464E4 /* AudioMemoWithACP WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C63C9ECE2709B16600C464E4 /* Interface.storyboard */,
+				C63C9ED12709B17100C464E4 /* Assets.xcassets */,
+				C63C9ED32709B17100C464E4 /* Info.plist */,
+			);
+			path = "AudioMemoWithACP WatchKit App";
+			sourceTree = "<group>";
+		};
+		C63C9EDC2709B17200C464E4 /* AudioMemoWithACP WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C60CB70B27132C7D00CAA323 /* Extensions */,
+				C60CB70C27132C9900CAA323 /* Model */,
+				C60CB70D27132CAD00CAA323 /* Data */,
+				C63C9EDD2709B17200C464E4 /* InterfaceController.swift */,
+				C63C9EDF2709B17200C464E4 /* ExtensionDelegate.swift */,
+				C63C9EE12709B17200C464E4 /* ComplicationController.swift */,
+				C63C9EE32709B17500C464E4 /* Assets.xcassets */,
+				C63C9EE52709B17500C464E4 /* Info.plist */,
+			);
+			path = "AudioMemoWithACP WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C63C9EC42709B16500C464E4 /* AudioMemoWithACP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63C9EF02709B17500C464E4 /* Build configuration list for PBXNativeTarget "AudioMemoWithACP" */;
+			buildPhases = (
+				C63C9EC32709B16500C464E4 /* Resources */,
+				C63C9EEF2709B17500C464E4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C63C9ECC2709B16600C464E4 /* PBXTargetDependency */,
+			);
+			name = AudioMemoWithACP;
+			productName = AudioMemoWithACP;
+			productReference = C63C9EC52709B16500C464E4 /* AudioMemoWithACP.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		C63C9EC82709B16600C464E4 /* AudioMemoWithACP WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63C9EEC2709B17500C464E4 /* Build configuration list for PBXNativeTarget "AudioMemoWithACP WatchKit App" */;
+			buildPhases = (
+				C63C9EC72709B16600C464E4 /* Resources */,
+				C63C9EEB2709B17500C464E4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C63C9EDB2709B17200C464E4 /* PBXTargetDependency */,
+			);
+			name = "AudioMemoWithACP WatchKit App";
+			productName = "AudioMemoWithACP WatchKit App";
+			productReference = C63C9EC92709B16600C464E4 /* AudioMemoWithACP WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C63C9ED72709B17200C464E4 /* AudioMemoWithACP WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63C9EE82709B17500C464E4 /* Build configuration list for PBXNativeTarget "AudioMemoWithACP WatchKit Extension" */;
+			buildPhases = (
+				C63C9ED42709B17200C464E4 /* Sources */,
+				C63C9ED52709B17200C464E4 /* Frameworks */,
+				C63C9ED62709B17200C464E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AudioMemoWithACP WatchKit Extension";
+			productName = "AudioMemoWithACP WatchKit Extension";
+			productReference = C63C9ED82709B17200C464E4 /* AudioMemoWithACP WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C63C9EBF2709B16500C464E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C63C9EC42709B16500C464E4 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C63C9EC82709B16600C464E4 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C63C9ED72709B17200C464E4 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = C63C9EC22709B16500C464E4 /* Build configuration list for PBXProject "AudioMemoWithACP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C63C9EBE2709B16500C464E4;
+			productRefGroup = C63C9EC62709B16500C464E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C63C9EC42709B16500C464E4 /* AudioMemoWithACP */,
+				C63C9EC82709B16600C464E4 /* AudioMemoWithACP WatchKit App */,
+				C63C9ED72709B17200C464E4 /* AudioMemoWithACP WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C63C9EC32709B16500C464E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63C9EC72709B16600C464E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63C9ED22709B17100C464E4 /* Assets.xcassets in Resources */,
+				C63C9ED02709B16600C464E4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63C9ED62709B17200C464E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63C9EE42709B17500C464E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C63C9ED42709B17200C464E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60CB70A2713211700CAA323 /* AudioInfo.swift in Sources */,
+				C63C9EE02709B17200C464E4 /* ExtensionDelegate.swift in Sources */,
+				C63C9EDE2709B17200C464E4 /* InterfaceController.swift in Sources */,
+				C63C9EE22709B17200C464E4 /* ComplicationController.swift in Sources */,
+				C60CB70627102FA600CAA323 /* JobData.swift in Sources */,
+				C60CB70F2713C24400CAA323 /* LocalDataController.swift in Sources */,
+				C60CB704270FE06F00CAA323 /* FileController.swift in Sources */,
+				C60CB7082710391300CAA323 /* Date+Ext.swift in Sources */,
+				C60CB702270FDBD300CAA323 /* AmiHTTP.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C63C9ECC2709B16600C464E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C63C9EC82709B16600C464E4 /* AudioMemoWithACP WatchKit App */;
+			targetProxy = C63C9ECB2709B16600C464E4 /* PBXContainerItemProxy */;
+		};
+		C63C9EDB2709B17200C464E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C63C9ED72709B17200C464E4 /* AudioMemoWithACP WatchKit Extension */;
+			targetProxy = C63C9EDA2709B17200C464E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C63C9ECE2709B16600C464E4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C63C9ECF2709B16600C464E4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C63C9EE62709B17500C464E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C63C9EE72709B17500C464E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C63C9EE92709B17500C464E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D47W8KKUZ3;
+				INFOPLIST_FILE = "AudioMemoWithACP WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.advanced-media.AudioMemoWithACP.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		C63C9EEA2709B17500C464E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D47W8KKUZ3;
+				INFOPLIST_FILE = "AudioMemoWithACP WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.advanced-media.AudioMemoWithACP.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		C63C9EED2709B17500C464E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D47W8KKUZ3;
+				IBSC_MODULE = AudioMemoWithACP_WatchKit_Extension;
+				INFOPLIST_FILE = "AudioMemoWithACP WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.advanced-media.AudioMemoWithACP.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		C63C9EEE2709B17500C464E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D47W8KKUZ3;
+				IBSC_MODULE = AudioMemoWithACP_WatchKit_Extension;
+				INFOPLIST_FILE = "AudioMemoWithACP WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.advanced-media.AudioMemoWithACP.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		C63C9EF12709B17500C464E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D47W8KKUZ3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.advanced-media.AudioMemoWithACP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C63C9EF22709B17500C464E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D47W8KKUZ3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.advanced-media.AudioMemoWithACP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C63C9EC22709B16500C464E4 /* Build configuration list for PBXProject "AudioMemoWithACP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63C9EE62709B17500C464E4 /* Debug */,
+				C63C9EE72709B17500C464E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63C9EE82709B17500C464E4 /* Build configuration list for PBXNativeTarget "AudioMemoWithACP WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63C9EE92709B17500C464E4 /* Debug */,
+				C63C9EEA2709B17500C464E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63C9EEC2709B17500C464E4 /* Build configuration list for PBXNativeTarget "AudioMemoWithACP WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63C9EED2709B17500C464E4 /* Debug */,
+				C63C9EEE2709B17500C464E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63C9EF02709B17500C464E4 /* Build configuration list for PBXNativeTarget "AudioMemoWithACP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63C9EF12709B17500C464E4 /* Debug */,
+				C63C9EF22709B17500C464E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C63C9EBF2709B16500C464E4 /* Project object */;
+}
